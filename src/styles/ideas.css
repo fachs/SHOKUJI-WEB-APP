@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Source+Sans+Pro:wght@300;400&display=swap');
 
-.ideas-container {
-    font-family: 'Quicksand', Helvetica, sans-serif;
-    font-size: 17px;
-    margin-right: 8px;
-    margin-top: 17px;
-    margin-left: 70px;
-    color: #2c2c2c;
-  }
-
   .thumbnail {
     background-color: #C4C4C4;
     display: grid;
