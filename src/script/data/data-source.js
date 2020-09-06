@@ -1,3 +1,5 @@
+import foods from './foods.js';
+
 class DataSource {
     static searchFood(keyword) {
         return new Promise((resolve, reject) => {
@@ -11,3 +13,5 @@ class DataSource {
         });
     }
 }
+
+export default DataSource;
