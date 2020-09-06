@@ -4,7 +4,7 @@ const main = () => {
     const searchElement = document.querySelector("#searchElement");
     const buttonSearchElement = document.querySelector("#searchButtonElement");
     const foodListElement = document.querySelector("#foodList");
-    const ideasElement = document.querySelector("#ideasList");
+    const ideasElement = document.querySelector("ideas-container");
 
     const onButtonSearchClicked = () => {
         DataSource.searchFood(searchElement.value)
