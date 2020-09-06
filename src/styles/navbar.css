@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Source+Sans+Pro:wght@300;400&display=swap');
 
-nav {
-    overflow: hidden;
-    padding-bottom: 15px;
-    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.157);
-    width: 100%;
-    font-family: 'Quicksand', Helvetica, sans-serif;
-  }
-  
   .dropdown {
     float: left;
     overflow: hidden;
@@ -83,7 +75,7 @@ nav {
     }
   }
   
-  nav img {
+  img {
     float: left;
     display: block;
     margin-top: 8px;
