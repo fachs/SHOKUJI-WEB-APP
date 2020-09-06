@@ -4,6 +4,7 @@ const main = () => {
     const searchElement = document.querySelector("#searchElement");
     const buttonSearchElement = document.querySelector("#searchButtonElement");
     const foodListElement = document.querySelector("#foodList");
+    const ideasElement = document.querySelector("#ideasList");
 
     const onButtonSearchClicked = () => {
         DataSource.searchFood(searchElement.value)
@@ -23,6 +24,11 @@ const main = () => {
     // };
     
     const renderResult = results => {
+        ideasElement.innerHTML = `
+        <style>
+            display: none;
+        </style>`;
+        
         foodListElement.innerHTML = "";
         results.forEach(function (food) {
             const {name, image, description, area, category} = food;
