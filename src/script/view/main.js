@@ -1,14 +1,14 @@
-const main = function () {
+const main = () => {
     const searchElement = document.querySelector("#searchElement");
     const buttonSearchElement = document.querySelector("#searchButtonElement");
     const foodListElement = document.querySelector("#foodList");
 
-    const onButtonSearchClicked = function () {
+    const onButtonSearchClicked = () => {
         const dataSource = new DataSource(renderResult, fallbackResult);
         dataSource.searchFood(searchElement.value);
     };
     
-    const renderResult = function (results) {
+    const renderResult = results => {
         foodListElement.innerHTML = "";
         results.forEach(function (food) {
             const {name, image, description, area, category} = food;
@@ -29,7 +29,7 @@ const main = function () {
         })
     };
 
-    var fallbackResult = function (message) {
+    var fallbackResult = message => {
         foodListElement.innerHTML = "";
         foodListElement.innerHTML += `<h2 class="placeholder">${message}</h2>`;
     };
