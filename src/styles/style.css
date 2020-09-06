@@ -1,0 +1,79 @@
+@import "navbar.css";
+@import "ideas.css";
+@import "foodlist.css";
+@import "footer.css";
+
+header {
+  display: flex;
+  flex-flow: row;
+}
+
+/* .popular-search {
+  font-family: 'Quicksand', Helvetica, sans-serif;
+  font-size: 17px;
+  margin-right: 8px;
+  margin-top: 17px;
+  margin-left: 70px;
+  color: #2c2c2c;
+}
+
+.popular-category > h4{
+  margin-bottom: 10px;
+}
+
+.category-thumbnails {
+  position: relative;
+  margin-left: 120px;
+  width: 840px;
+  display: flex;
+  padding: 10px;
+  background-color: #C4C4C4;
+}
+
+.tag-name {
+  display: flex;
+  margin-left: 50px;
+}
+  
+.tag-name > div {
+  padding: 5px 15px 13px 15px;
+  border-radius: 0px;
+  background-color: #C4C4C4;
+  margin-left: 13px;
+  text-align: center;
+  height: 15px;
+  cursor: pointer;
+}
+  
+.tag-name > div:hover {
+  background-color: #858383;
+  color: white;
+}
+
+.category-thumbnails > div {
+  display: block;
+  padding-left: 15px;
+  width: 140px;
+  height: 68px;
+}
+
+.cat1 > img, .cat2 > img, .cat, .cat1 > div{
+  display: block;
+  padding-left: 15px;
+  width: 140px;
+  height: 68px;
+}
+
+.text-block1{
+  text-align: center;
+  width: 140px;
+  position: absolute;
+  background-color: rgb(70, 70, 70, 0.5);
+  color: white;
+}
+
+.text-block1:hover {
+  background-color: rgba(31, 30, 30, 0.5);
+  cursor: pointer;
+} */
+

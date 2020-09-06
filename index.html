@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shokuji</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/styles/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="dropdown">
+                <button class="dropbtn">Find by
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <div class="row">
+                        <div class="column">
+                            <h3>Ingredients</h3>
+                            <a href="#">Ingredients 1</a>
+                            <a href="#">Ingredients 2</a>
+                            <a href="#">Ingredients 3</a>
+                            <a href="#">Ingredients 4</a>
+                        </div>
+                        <div class="column">
+                            <h3>Area</h3>
+                            <a href="#">Area 1</a>
+                            <a href="#">Area 2</a>
+                            <a href="#">Area 3</a>
+                        </div>
+                        <div class="column">
+                            <h3>Category</h3>
+                            <a href="#">Category 1</a>
+                            <a href="#">Category 2</a>
+                            <a href="#">Category 3</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="src/assets/img/shokuji.png" alt="">
+            <div class="search-container" id="search-container">
+                <input type="search" name="search" id="searchElement" placeholder="Keyword...">
+                <button id="searchButtonElement" type="submit">Search</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- <section class="popular-category">
+            <h4>Popular Category</h4>
+            <div class="category-thumbnails">
+                <div class="cat1">
+                    <img src="src/assets/img/category/beef.png" alt="">
+                    <div class="text-block1"><h5>Beef</h5></div>
+                </div>
+                <div class="cat2">
+                    <img src="src/assets/img/category/chicken.png" alt="">
+                    <div class="text-block"><h5>Chicken</h5></div>
+                </div>
+                <img src="src/assets/img/category/dessert.png" alt="">
+                <div class="text-block"><h5>Dessert</h5></div>
+                <img src="src/assets/img/category/lamb.png" alt="">
+                <div class="text-block"><h5>Lamb</h5></div>
+                <img src="src/assets/img/category/vegetarian.png" alt="">
+                <div class="text-block"><h5>Vegetarian</h5></div>
+                <img src="src/assets/img/category/pasta.png" alt="">
+                <div class="text-block"><h5>Pasta</h5></div>
+            </div>
+        </section> -->
+        <section class="ideas-container">
+            <h4>Inpiration and Ideas</h4>
+            <div class="thumbnail">
+                <div class="jumbo-thumbnail">
+                    <img src="src/assets/img/emy-XoByiBymX20-unsplash.jpg" alt="">
+                    <div class="overlay">Malaysian Spicy Curry</div>
+                </div>
+                <div class="img1 thumb">
+                    <img src="src/assets/img/homemade italian pizza.jpg" alt="">
+                    <div class="overlay-thumbnail">Home Made Italian Pizza</div>
+                </div>
+                <div class="img2 thumb">
+                    <img src="src/assets/img/Oreo Cookie sandwiches.jpg" alt="">
+                    <div class="overlay-thumbnail">Oreo Cookie Sandwiches</div>
+                </div>
+                <div class="img3 thumb">
+                    <img src="src/assets/img/slideshow/slide2.jpg" alt="">
+                    <div class="overlay-thumbnail bottom-thumb">Oreo Cookie Sandwiches</div>
+                </div>
+                <div class="img4 thumb">
+                    <img src="src/assets/img/slideshow/slide3.jpg" alt="" >
+                    <div class="overlay-thumbnail bottom-thumb">Chocolate Pancake</div>
+                </div>
+            </div>
+        </section>
+        <div id="foodList"></div>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li id="credit">© 2020 SHOKUJI. All Rights Reserved </li>
+        </ul>
+    </footer>
+    <script src="src/script/data/foods.js"></script>
+    <script src="src/script/data/data-source.js"></script>
+    <script src="src/script/view/main.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
