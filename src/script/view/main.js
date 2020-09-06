@@ -11,11 +11,7 @@ const main = function () {
     const renderResult = function (results) {
         foodListElement.innerHTML = "";
         results.forEach(function (food) {
-            const name = food.name;
-            const image = food.image;
-            const description = food.description;
-            const area = food.area;
-            const category = food.category;
+            const {name, image, description, area, category} = food;
             
             const foodElement = document.createElement("div");
             foodElement.setAttribute("class", "food");
@@ -35,7 +31,7 @@ const main = function () {
 
     var fallbackResult = function (message) {
         foodListElement.innerHTML = "";
-        foodListElement.innerHTML += '<h2 class="placeholder">' + message + '</h2>'
+        foodListElement.innerHTML += `<h2 class="placeholder">${message}</h2>`;
     };
 
     buttonSearchElement.addEventListener("click", onButtonSearchClicked);
