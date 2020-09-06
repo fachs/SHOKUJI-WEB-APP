@@ -20,13 +20,14 @@ const main = function () {
             const foodElement = document.createElement("div");
             foodElement.setAttribute("class", "food");
 
-            foodElement.innerHTML = '<img class="image-food" src="' + image + '" alt="Food Image">\n' +
-                '<div class="food-info">\n' +
-                '<h2>' + name + '</h2>\n' +
-                '<h4>' + area + '</h4>\n' +
-                '<h4>' + category + '</h4>\n' +
-                '<p>' + description + '</p>' +
-                '</div>';
+            foodElement.innerHTML = `
+                <img class="image-food" src="${image}" alt="Food Image">
+                <div class="food-info">
+                    <h2>${name}</h2>
+                    <h4>${area}</h4>
+                    <h4>${category}</h4>
+                    <p>${description}</p>
+                </div>`;
             
             foodListElement.appendChild(foodElement);
         })
