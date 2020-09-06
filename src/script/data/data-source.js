@@ -1,16 +1,13 @@
 class DataSource {
-    constructor(onSuccess, onFailed) {
-        this.onSuccess = onSuccess;
-        this.onFailed = onFailed;
-    }
+    static searchFood(keyword) {
+        return new Promise((resolve, reject) => {
+            const filteredFoods = foods.filter(food => food.name.toUpperCase().includes(keyword.toUpperCase()));
 
-    searchFood(keyword) {
-        const filteredFoods = foods.filter(food => food.name.toUpperCase().includes(keyword.toUpperCase()));
-
-        if (filteredFoods.length) {
-            this.onSuccess(filteredFoods);
-        } else {
-            this.onFailed(`${keyword} is not found`);
-        }
+            if (filteredFoods.length) {
+                resolve(filteredFoods);
+            } else {
+                reject(`${keyword} is not found`);
+            }
+        });
     }
 }
