@@ -1,4 +1,4 @@
-var foods = [
+const foods = [
     {
         name: "Teriyaki Chicken Casserole",
         category: "Chicken",
