@@ -4,9 +4,21 @@ const main = () => {
     const foodListElement = document.querySelector("#foodList");
 
     const onButtonSearchClicked = () => {
-        const dataSource = new DataSource(renderResult, fallbackResult);
-        dataSource.searchFood(searchElement.value);
+        DataSource.searchFood(searchElement.value)
+            .then(renderResult)
+            .catch(fallbackResult)
     };
+
+    //Async Await
+
+    // const onButtonSearchClicked = async () => {
+    //     try {
+    //         const result = await DataSource.searchFood(searchElement.value);
+    //         renderResult(result);
+    //     } catch (message) {
+    //         fallbackResult(message)
+    //     }
+    // };
     
     const renderResult = results => {
         foodListElement.innerHTML = "";
