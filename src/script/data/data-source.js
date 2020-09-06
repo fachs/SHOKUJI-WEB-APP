@@ -4,7 +4,7 @@ function DataSource(onSuccess, onFailed) {
 }
 
 DataSource.prototype.searchFood = function (keyword) {
-    let filteredFoods = foods.filter(function (food) {
+    const filteredFoods = foods.filter(function (food) {
        return food.name.toUpperCase().includes(keyword.toUpperCase());
     });
 
