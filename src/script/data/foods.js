@@ -7,3 +7,5 @@ const foods = [
         description: "Food Description Test"
     }
 ];
+
+export default foods;
