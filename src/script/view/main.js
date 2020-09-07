@@ -2,7 +2,6 @@ import DataSource from '../data/data-source.js';
 
 const main = () => {
     const searchElement = document.querySelector("#searchElement");
-    const buttonSearchElement = document.querySelector("#searchButtonElement");
     const foodListElement = document.querySelector("#foodList");
     const ideasElement = document.querySelector("ideas-container");
 
@@ -54,7 +53,7 @@ const main = () => {
         foodListElement.innerHTML += `<h2 class="placeholder">${message}</h2>`;
     };
 
-    buttonSearchElement.addEventListener("click", onButtonSearchClicked);
+    searchElement.clickEvent = onButtonSearchClicked;
 };
 
 export default main;
