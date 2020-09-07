@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Source+Sans+Pro:wght@300;400&display=swap');
 
-#foodList {
+food-list {
+    display: block;
     margin-top: 32px;
     width: 70%;
     padding: 16px;
     margin-left: 180px;
 }
 
-#foodList > .placeholder {
+food-list > .placeholder {
     font-weight: lighter;
     color: rgba(0,0,0,0.5);
     -webkit-user-select: none;
@@ -16,14 +17,15 @@
     user-select: none;
 }
 
-.food {
+food-item {
+    display: block;
     margin-bottom: 18px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     overflow: hidden;
 }
 
-.food .image-food {
+food-item .image-food {
     width: 100%;
     max-height: 300px;
     object-fit: cover;
