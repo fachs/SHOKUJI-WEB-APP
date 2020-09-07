@@ -6,9 +6,6 @@
 header {
   display: flex;
   flex-flow: row;
-}
-
-nav-bar {
   display: block;
   overflow: hidden;
   padding-bottom: 15px;
