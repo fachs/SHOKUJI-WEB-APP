@@ -32,11 +32,7 @@ class NavBar extends HTMLElement {
             </div>
         </div>
     </div>
-    <img src="src/assets/img/shokuji.png" alt="">
-    <div class="search-container" id="search-container">
-        <input type="search" name="search" id="searchElement" placeholder="Keyword...">
-        <button id="searchButtonElement" type="submit">Search</button>
-    </div>`;
+    <img src="src/assets/img/shokuji.png" alt="">`;
     }
 }
 
