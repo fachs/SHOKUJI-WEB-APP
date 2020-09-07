@@ -23,6 +23,14 @@ ideas-container {
   color: #2c2c2c;
 }
 
+food-list {
+  display: block;
+  margin-top: 32px;
+  width: 70%;
+  padding: 16px;
+  margin-left: 180px;
+}
+
 /* .popular-search {
   font-family: 'Quicksand', Helvetica, sans-serif;
   font-size: 17px;
