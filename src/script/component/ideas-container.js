@@ -5,6 +5,16 @@ class IdeasContainer extends HTMLElement {
 
     render() {
         this.innerHTML = `
+        <style>
+            h4 {
+                padding-top: 30px;
+                margin-left: 100px;
+            }
+            .thumbnail {
+                margin-left: 135px;
+                margin-bottom: 113px;
+            }
+        </style>
         <h4>Inpiration and Ideas</h4>
         <div class="thumbnail">
                 <div class="jumbo-thumbnail">
