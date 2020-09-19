@@ -128,7 +128,7 @@ class NavBar extends HTMLElement {
             </div>
         </div>
     </div>
-    <img src="src/assets/img/shokuji.png" alt="">`;
+    <a href="index.html"><img src="src/assets/img/shokuji.png" alt="logo"></a>`;
     }
 }
 
